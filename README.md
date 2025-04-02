@@ -24,6 +24,8 @@ source .venv/bin/activate
 
 Make sure your editor is using the correct Python virtual environment, with the interpreter at `.venv/bin/python`.
 
+* You can run utility scripts from root e.g. `python manage.py format` or `python manage.py lint`
+
 To format code:
 
 ```bash
