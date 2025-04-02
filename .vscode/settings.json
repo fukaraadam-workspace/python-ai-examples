@@ -1,0 +1,37 @@
+{
+  // Added these for Prettier
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  // Added these for IntelliSense
+  "files.associations": {
+    ".env.*": "properties"
+  },
+  // Added these for Github Markdown
+  "markdownlint.config": {
+    "MD033": {
+      "allowed_elements": [
+        "a",
+        "span",
+        "h1",
+        "img",
+        "p"
+      ]
+    },
+    "first-line-h1": false
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
