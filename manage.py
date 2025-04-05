@@ -1,31 +1,31 @@
 from argparse import ArgumentParser
 
 
-def format():
+def format() -> None:
     """Format code using ruff."""
     import subprocess
 
     try:
         # Run ruff check with fix
-        subprocess.run(["ruff", "check", "app", "--fix"], check=True)
+        subprocess.run(["ruff", "check", ".", "--fix"], check=True)
         # Run ruff format
-        subprocess.run(["ruff", "format", "app"], check=True)
+        subprocess.run(["ruff", "format", "."], check=True)
         print("✨ Code formatted successfully!")
     except subprocess.CalledProcessError as e:
         print(f"❌ Error formatting code: {e}")
 
 
-def lint():
+def lint() -> None:
     """Run linting and type checking."""
     import subprocess
 
     try:
         # Run mypy type checking
-        subprocess.run(["mypy", "app"], check=True)
+        subprocess.run(["mypy", "."], check=True)
         # Run ruff linting
-        subprocess.run(["ruff", "check", "app"], check=True)
+        subprocess.run(["ruff", "check", "."], check=True)
         # Run ruff format check
-        subprocess.run(["ruff", "format", "app", "--check"], check=True)
+        subprocess.run(["ruff", "format", ".", "--check"], check=True)
         print("✨ Code validation successful!")
     except subprocess.CalledProcessError as e:
         print(f"❌ Error validating code: {e}")
