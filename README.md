@@ -49,3 +49,18 @@ ruff format . --check
 ## Tag Convention
 
 Todos and Warnings will be specified respectively inside code with `<ToDo>`, `<Warning>` tags and inside README.md files with `ToDos`, `Warnings` sections.
+
+## Troubleshooting
+
+If this error occurs:
+
+```text
+UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+```
+
+install this:
+
+```bash
+sudo apt install python3-tk
+```
