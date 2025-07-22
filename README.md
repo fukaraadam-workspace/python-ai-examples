@@ -58,9 +58,9 @@ ruff format . --check
 
 Todos and Warnings will be specified respectively inside code with `<ToDo>`, `<Warning>` tags and inside README.md file with `ToDos`, `Warnings` sections.
 
-## Troubleshooting
+## 🚧 Troubleshooting
 
-If ui related errors occurs like these:
+If ui related errors occurs like these in wsl:
 
 ```text
 UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
