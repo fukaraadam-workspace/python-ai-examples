@@ -72,3 +72,19 @@ install this:
 ```bash
 sudo apt install python3-tk
 ```
+
+For this error:
+
+```text
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "/home/fukaraadam/projects/vftr-acq-ai-image-service/.venv/lib/python3.12/site-packages/cv2/qt/plugins" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: xcb.
+```
+
+install this:
+
+```bash
+sudo apt update
+sudo apt install -y libx11-dev libxext-dev libxrender-dev libqt5x11extras5 libxcb-xinerama0
+```
