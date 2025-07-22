@@ -60,23 +60,15 @@ Todos and Warnings will be specified respectively inside code with `<ToDo>`, `<W
 
 ## Troubleshooting
 
-If this error occurs:
+If ui related errors occurs like these:
 
 ```text
 UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
   plt.show()
 ```
 
-install this:
-
-```bash
-sudo apt install python3-tk
-```
-
-For this error:
-
 ```text
-qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "/home/fukaraadam/projects/vftr-acq-ai-image-service/.venv/lib/python3.12/site-packages/cv2/qt/plugins" even though it was found.
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in ".venv/lib/python3.12/site-packages/cv2/qt/plugins" even though it was found.
 This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
 
 Available platform plugins are: xcb.
