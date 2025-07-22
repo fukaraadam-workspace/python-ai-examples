@@ -2,27 +2,25 @@
 
 Custom repo to work on ai related things
 
-## Requirements
+## 🚀 Quick Start
 
-* [uv](https://docs.astral.sh/uv/) for Python package and environment management.
-
-## General Workflow
-
-By default, the dependencies are managed with [uv](https://docs.astral.sh/uv/), go there and install it.
-
-From root, you can install all the dependencies with:
+Install Dependencies with [uv](https://docs.astral.sh/uv/)
 
 ```bash
 uv sync
 ```
 
-Then you can activate the virtual environment with:
+Activate virtual environment
 
-```bash
+ ```bash
 source .venv/bin/activate
+# or, if you are using windows
+.venv\Scripts\activate
 ```
 
-Make sure your editor is using the correct Python virtual environment, with the interpreter at `.venv/bin/python`.
+### 🏗️ Development
+
+Run `manage --help` to see available commands e.g. `manage lint` or `manage format`.
 
 * You can run utility scripts from root e.g. `python manage.py format` or `python manage.py lint`
 
@@ -46,9 +44,19 @@ ruff check .
 ruff format . --check
 ```
 
-## Tag Convention
+## 🛠️ Project Structure
 
-Todos and Warnings will be specified respectively inside code with `<ToDo>`, `<Warning>` tags and inside README.md files with `ToDos`, `Warnings` sections.
+### 🖊️ Naming Convention
+
+* snake_case: used for Python files, functions, and variables.
+* PascalCase: used for classes and exceptions.
+* UPPER_CASE: used for constants.
+* _snake_case: used for private variables and functions.
+* `__snake_case__`: used for special variables and methods (dunder methods).
+
+### 💡 Tag Convention
+
+Todos and Warnings will be specified respectively inside code with `<ToDo>`, `<Warning>` tags and inside README.md file with `ToDos`, `Warnings` sections.
 
 ## Troubleshooting
 

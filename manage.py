@@ -31,15 +31,15 @@ def lint() -> None:
         print(f"❌ Error validating code: {e}")
 
 
-if __name__ == "__main__":
+def cli():
     parser = ArgumentParser(description="Project management commands")
     subparsers = parser.add_subparsers(dest="command", help="Commands")
 
     # Format command
-    format_parser = subparsers.add_parser("format", help="Format code using ruff")
+    subparsers.add_parser("format", help="Format code using ruff")
 
     # Lint command
-    lint_parser = subparsers.add_parser("lint", help="Run linting and type checking")
+    subparsers.add_parser("lint", help="Run linting and type checking")
 
     # args = parser.parse_args()
     known_args, unknown_args = parser.parse_known_args()
@@ -48,3 +48,7 @@ if __name__ == "__main__":
         format()
     elif known_args.command == "lint":
         lint()
+
+
+if __name__ == "__main__":
+    cli()
