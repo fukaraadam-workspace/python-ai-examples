@@ -5,7 +5,7 @@ import numpy as np
 # Generate synthetic data
 np.random.seed(42)
 X = 2 * np.random.rand(100, 1)
-y = 1 + 3 * X + np.random.randn(100, 1)
+y = 1 + 3 * X + 0.4 * np.random.randn(100, 1)
 
 # Initialize parameters
 m, b = 0, 0
