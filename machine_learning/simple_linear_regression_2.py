@@ -58,6 +58,7 @@ class LinearRegression:
             verticalalignment="top",
             bbox={"boxstyle": "round", "facecolor": "wheat", "alpha": 0.5},
         )
+        plt.waitforbuttonpress()
         # endregion PLOT SETUP END
 
         for i in range(n_iter):

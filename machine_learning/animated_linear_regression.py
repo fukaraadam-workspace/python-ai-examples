@@ -5,12 +5,12 @@ import numpy as np
 # Generate synthetic data
 np.random.seed(42)
 X = 2 * np.random.rand(100, 1)
-y = 4 + 3 * X + np.random.randn(100, 1)
+y = 1 + 3 * X + np.random.randn(100, 1)
 
 # Initialize parameters
 m, b = 0, 0
-learning_rate = 0.1
-iterations = 50
+learning_rate = 0.02
+iterations = 100
 
 # Store history
 history = []
@@ -38,7 +38,7 @@ def animate(i):
     return (line,)
 
 
-ani = animation.FuncAnimation(fig, animate, frames=len(history), interval=200)
+ani = animation.FuncAnimation(fig, animate, frames=len(history), interval=50)
 plt.xlabel("Image Quality Score")
 plt.ylabel("Fraud Risk Score")
 plt.grid(True)
