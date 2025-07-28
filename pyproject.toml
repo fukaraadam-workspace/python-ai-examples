@@ -10,6 +10,7 @@ dependencies = [
     "pandas>=2.2.3",
     "pywavelets>=1.8.0",
     "scikit-learn>=1.7.0",
+    "streamlit>=1.47.1",
     "tensorflow[and-cuda]>=2.18.0",
 ]
 
