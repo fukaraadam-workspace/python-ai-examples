@@ -27,7 +27,7 @@ show_iter = st.sidebar.slider("Show Iteration", 1, max_iters, 1)
 def train_history(X, y, lr, iters):
     m, b = 0.0, 0.0
     history = []
-    for i in range(iters):
+    for _ in range(iters):
         y_pred = m * X + b
         error = y_pred - y
         m_grad = (2 / len(X)) * (error * X).sum()

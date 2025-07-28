@@ -46,7 +46,9 @@ class LinearRegression:
         )
         ax.set_xlabel("X")
         ax.set_ylabel("y")
-        ax.set_title("Linear Regression Training\ny = 4x^2 + 2x + 5")
+        ax.set_title(
+            "Linear Regression Training\ny = 4x^2 + 2x + 5\n y = w0 * x^2 + w1 * x + b"
+        )
         ax.legend()
         # Add a text annotation for MSE
         mse_text = ax.text(
