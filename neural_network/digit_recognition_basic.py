@@ -30,7 +30,7 @@ model = keras.Sequential(
     [keras.layers.Dense(10, input_shape=(784,), activation="sigmoid")]
 )
 
-print(model.summary())
+model.summary()
 
 # Compile the model
 model.compile(
@@ -38,7 +38,7 @@ model.compile(
 )
 
 # Train the model
-model.fit(x_train_flatten, y_train, epochs=5)
+model.fit(x_train_flatten, y_train, epochs=30)
 
 # Evaluate the model
 test_loss, test_acc = model.evaluate(x_test_flatten, y_test)

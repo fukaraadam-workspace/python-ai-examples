@@ -57,9 +57,10 @@ model = Sequential(
 model.compile(
     optimizer="adam", loss="sparse_categorical_crossentropy", metrics=["accuracy"]
 )
+model.summary()
 
 # Training the model with training data
-history = model.fit(x_train, y_train, epochs=10, batch_size=2000, validation_split=0.2)
+history = model.fit(x_train, y_train, epochs=30, batch_size=2000, validation_split=0.2)
 
 # Evaluating the model on test data
 results = model.evaluate(x_test, y_test, verbose=0)
