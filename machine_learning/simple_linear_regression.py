@@ -70,7 +70,7 @@ class LinearRegression:
             # MSE = Σ(yi - pi)² / n
             mse = np.mean((y - y_pred) ** 2)
             mse_text.set_text(
-                f"Iteration {i + 1}\nMSE = {mse:.4f}\nweights = {[f'{w:.4f}' for w in self.weights]}\nbias = {self.bias:.4f}"
+                f"Iteration {i + 1}\nMSE = {mse:.4f}\nweights = {self.weights[0]:.4f}\nbias = {self.bias:.4f}"
             )
             line.set_ydata(self.predict(X))  # Update the line
             # endregion UPDATE THE PLOT END
